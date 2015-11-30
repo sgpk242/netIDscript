@@ -1,20 +1,32 @@
 javascript:(function(win, doc, $, undefined){
     
-    'use strict';
+    // the minimum version of jQuery we want
+	var v = "1.3.2";
+
+	// check prior inclusion and version
+	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
+		var done = false;
+		var script = document.createElement("script");
+		script.src = "http://ajax.googleapis.com/ajax/libs/jquery/" + v + "/jquery.min.js";
+		script.onload = script.onreadystatechange = function(){
+			if (!done && (!this.readyState || this.readyState == "loaded" || this.readyState == "complete")) {
+				done = true;
+				initMyBookmarklet();
+			}
+		};
+		document.getElementsByTagName("head")[0].appendChild(script);
+	} else {
+		initMyBookmarklet();
+	}
+	
+	function initMyBookmarklet() {
+		(window.myBookmarklet = function() {
+			// your JavaScript code goes here!
+			alert('attempting to fill form');
+    	    $('input[name=cn]').val('Sean Keenan');
+    	    alert('end of function');
+    	    //$('#form').submit();
+		})();
+	}
     
-    // Don't run if jQuery isn't loaded
-    if (typeof window.jQuery === 'undefined') {
-        alert('no jQuery');
-        return;
-    }
-    
-    // Code goes here.
-    //var fillForm = function() {
-        alert('attempting to fill form');
-    	$('input[name=cn]').val('Sean Keenan');
-    //};
-    
-    fillForm();
-    alert('end of function');
-    //$('#form').submit();
 })(window, window.document, window.jQuery);
