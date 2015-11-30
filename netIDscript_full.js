@@ -10,9 +10,9 @@ javascript:(function(win, doc, $, undefined){
     
     // Code goes here.
     var fillForm = function() {
-    	$('input[name=cn]').val(data.name);
+    	$('input[name=cn]').val('Sean Keenan');
     };
     
     fillForm();
-    $('#form').submit();
+    //$('#form').submit();
 })(window, window.document, window.jQuery);
