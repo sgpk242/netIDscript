@@ -2,7 +2,7 @@ javascript:(function(win, doc, $, undefined){
 	// the minimum version of jQuery we want
     	var v = "1.3.2";
 	
-	alert('inside function');
+	alert(window.location.href);
 	
 	// check prior inclusion and version
 	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
