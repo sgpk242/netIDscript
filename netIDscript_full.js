@@ -9,12 +9,12 @@ javascript:(function(win, doc, $, undefined){
     }
     
     // Code goes here.
-    var fillForm = function() {
+    //var fillForm = function() {
         alert('attempting to fill form');
     	$('input[name=cn]').val('Sean Keenan');
-    };
+    //};
     
     fillForm();
-    alert('inside function');
+    alert('end of function');
     //$('#form').submit();
 })(window, window.document, window.jQuery);
