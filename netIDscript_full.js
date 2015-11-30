@@ -1,5 +1,5 @@
 javascript:(function(win, doc, $, undefined){
-    alert('inside function');
+    
     'use strict';
     
     // Don't run if jQuery isn't loaded
@@ -7,6 +7,8 @@ javascript:(function(win, doc, $, undefined){
         alert('no jQuery');
         return;
     }
+    
+    alert('inside function');
     
     // Code goes here.
     var fillForm = function() {
