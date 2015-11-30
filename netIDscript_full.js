@@ -1,8 +1,9 @@
 javascript:(function(win, doc, $, undefined){
-    
-    // the minimum version of jQuery we want
-	var v = "1.3.2";
-
+	// the minimum version of jQuery we want
+    	var v = "1.3.2";
+	
+	alert('inside function');
+	
 	// check prior inclusion and version
 	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
 		var done = false;
@@ -23,9 +24,9 @@ javascript:(function(win, doc, $, undefined){
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
 			alert('attempting to fill form');
-    	    $('input[name=cn]').val('Sean Keenan');
-    	    alert('end of function');
-    	    //$('#form').submit();
+    	    		$('input[name=cn]').val('Sean Keenan');
+    	    		alert('end of function');
+    	    		//$('#form').submit();
 		})();
 	}
     
