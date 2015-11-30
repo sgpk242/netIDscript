@@ -1,1 +1,1 @@
-<a href="javascript:(function(d){body=d.getElementsByTagName('body')[0],script=d.createElement('script');script.src='//raw.github.com/sgpk242/netIDscript/master/test.js';body.appendChild(script);}(window.document));">netIDscript</a>
+<a href="javascript:(function(d){body=d.getElementsByTagName('body')[0],script=d.createElement('script');script.src='//raw.github.com/sgpk242/netIDscript/temp_branch/test.js';body.appendChild(script);}(window.document));">netIDscript</a>
