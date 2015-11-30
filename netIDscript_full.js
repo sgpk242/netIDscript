@@ -25,9 +25,9 @@ javascript:(function(win, doc, $, undefined){
 	function initMyBookmarklet() {
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
-			alert('attempting to fill form');
+			alert('filling in form');
     	    		$('input[name=cn]').val('Sean Keenan');
-    	    		alert('end of function');
+    	    		alert('done filling');
     	    		//$('#form').submit();
 		})();
 	}
