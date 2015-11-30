@@ -10,6 +10,7 @@ javascript:(function(win, doc, $, undefined){
     
     // Code goes here.
     var fillForm = function() {
+        alert('attempting to fill form');
     	$('input[name=cn]').val('Sean Keenan');
     };
     
