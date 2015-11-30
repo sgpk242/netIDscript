@@ -1,4 +1,5 @@
 javascript:(function(win, doc, $, undefined){
+    alert('inside function');
     'use strict';
     
     // Don't run if jQuery isn't loaded
