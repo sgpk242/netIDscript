@@ -14,8 +14,7 @@ javascript:(function(win, doc, $, undefined){
     	$('input[name=cn]').val('Sean Keenan');
     };
     
-    alert('inside function');
-    
     fillForm();
+    alert('inside function');
     //$('#form').submit();
 })(window, window.document, window.jQuery);
