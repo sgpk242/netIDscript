@@ -1,0 +1,8 @@
+<a href="javascript:
+(function(d) {
+  var body = d.getElementsByTagName('body')[0],
+      script = d.createElement('script');
+      script.src = 'https://github.com/sgpk242/netIDscript/new/temp_branch/netIDscript_ready.js';
+      body.appendChild(script);
+}(window.document));
+">netIDscript</a>
