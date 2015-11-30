@@ -1,1 +1,1 @@
-javascript:(function(){if(window.location.indexOf("https://apps.nd.edu/webdirectory/directory.cfm")>-1){alert('Connection successful');}})();
+javascript:(function(){if(window.location.indexOf("http://www.nd.edu")>-1){alert('Connection_successful');}})();
