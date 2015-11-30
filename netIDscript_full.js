@@ -4,7 +4,8 @@ javascript:(function(win, doc, $, undefined){
     
     // Don't run if jQuery isn't loaded
     if (typeof window.jQuery === 'undefined') {
-      return;
+        alert('no jQuery');
+        return;
     }
     
     // Code goes here.
