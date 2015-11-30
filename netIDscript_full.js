@@ -6,6 +6,7 @@ javascript:(function(win, doc, $, undefined){
 	
 	// check prior inclusion and version
 	if (window.jQuery === undefined || window.jQuery.fn.jquery < v) {
+		alert('Getting jQuery');
 		var done = false;
 		var script = document.createElement("script");
 		script.src = "http://ajax.googleapis.com/ajax/libs/jquery/" + v + "/jquery.min.js";
@@ -17,6 +18,7 @@ javascript:(function(win, doc, $, undefined){
 		};
 		document.getElementsByTagName("head")[0].appendChild(script);
 	} else {
+		alert('ready for function');
 		initMyBookmarklet();
 	}
 	
