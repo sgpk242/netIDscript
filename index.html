@@ -39,7 +39,18 @@
           <h3>
 <a id="welcome-to-my-bookmarklet-page" class="anchor" href="#welcome-to-my-bookmarklet-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to My Bookmarklet Page.</h3>
 
-<p>I was experimenting with bookmarklets for a while when I had a university project to locate the user IDs of faculty so that they could be entered for a department election. The only way to find the user ID was by entering the faculty member's name into my university's online directory form - only one name could be submitted at a time. To expedite the process of locating over 200 faculty member's IDs, I decided to look into bookmarklets. Although I found them to be a really interesting tool, I decided to stop pursuing this project when I learned that the Content Security Policy (2015) prevented me from using jQuery and my files hosted on this site in my bookmarklets on other sites.</p>
+<p>I was experimenting with bookmarklets for a while when I had a university project to locate the user IDs of faculty so that they could be entered for a department election. The only way to find the user ID was by entering the faculty member's name into my university's online directory form - only one name could be submitted at a time. To expedite the process of locating over 200 faculty member's IDs, I decided to look into bookmarklets. </p>
+
+<p>This text would be entered into the URL of the bookmarklet:</p>
+
+<pre><code>javascript:(function(){   
+   document.body.appendChild(document.createElement('script')).src='http://sgpk242.github.io/netIDscript/final.js';
+})();
+</code></pre>
+
+<p>I used an 'alert' function to test this (code [here]'<a href="http://sgpk242.github.io/netIDscript/test.js">http://sgpk242.github.io/netIDscript/test.js</a>'). Final.js can be found [here]'<a href="http://sgpk242.github.io/netIDscript/final.js">http://sgpk242.github.io/netIDscript/final.js</a>'.</p>
+
+<p>Although I found them to be a really interesting tool, I decided to stop pursuing this project when I learned that the Content Security Policy (2015) prevented me from using jQuery and my files hosted on this site in my bookmarklets on other sites.</p>
 
 <p>December 24, 2015</p>
         </article>
