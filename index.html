@@ -44,11 +44,13 @@
 <p>This text would be entered into the URL of the bookmarklet:</p>
 
 <pre><code>javascript:(function(){   
-   document.body.appendChild(document.createElement('script')).src='http://sgpk242.github.io/netIDscript/final.js';
+   document.body.appendChild(
+   document.createElement('script')).src=
+   'http://sgpk242.github.io/netIDscript/final.js';
 })();
 </code></pre>
 
-<p>I used an 'alert' function to test this (code [here]'<a href="http://sgpk242.github.io/netIDscript/test.js">http://sgpk242.github.io/netIDscript/test.js</a>'). Final.js can be found [here]'<a href="http://sgpk242.github.io/netIDscript/final.js">http://sgpk242.github.io/netIDscript/final.js</a>'.</p>
+<p>I used an 'alert' function to test this (code <a href="http://sgpk242.github.io/netIDscript/test.js">here</a>). Final.js can be found <a href="http://sgpk242.github.io/netIDscript/final.js">here</a>.</p>
 
 <p>Although I found them to be a really interesting tool, I decided to stop pursuing this project when I learned that the Content Security Policy (2015) prevented me from using jQuery and my files hosted on this site in my bookmarklets on other sites.</p>
 
