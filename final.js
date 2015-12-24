@@ -1,4 +1,4 @@
-javascript:(function(win, doc, $, undefined){
+(function(win, doc, $, undefined){
 	// the minimum version of jQuery we want
     	var v = "1.3.2";
 	
