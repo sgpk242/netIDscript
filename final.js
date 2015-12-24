@@ -6,9 +6,9 @@
 		(window.myBookmarklet = function() {
 			// your JavaScript code goes here!
 			alert('filling in form');
-    	    		$('input[name=cn]').val('Sean Keenan');
+    	    		$('#form').val('Sean Keenan');
     	    		alert('done filling');
-    	    		//$('#form').submit();
+    	    		$('#form').submit();
 		})();
 	}
     
